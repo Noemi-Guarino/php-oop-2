@@ -1,11 +1,11 @@
 <?php
 require_once __DIR__.('/product.php');
-require __DIR__.('/types/food.php');
-require __DIR__.('/food.php');
+require_once __DIR__.('/food.php');
 require_once __DIR__.('/toys.php');
-require __DIR__.('/kennels.php');
-require __DIR__.('/card.php');
+require_once __DIR__.('/kennels.php');
+require_once __DIR__.('/card.php');
 
+$productOne = new Food( 'Croccantini', '19,99€', 'img', 'cane', 'Super crocchette', 'Proteine disidratate di salmone','gluten free');
 
 
 ?>
@@ -20,8 +20,9 @@ require __DIR__.('/card.php');
 <body>
 
     <div>
-        <h2><?php echo $productOne->name ?></h2>
-        <h2><?php echo $productOne->composition ?></h2>
+        <h1>we</h1>
+        <h2><?php echo $productOne->get_name() ?></h2>
+        <h2><?php echo $productOne->get_composition() ?></h2>
 
     </div>
     
