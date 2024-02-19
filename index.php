@@ -4,6 +4,8 @@ require __DIR__.('/types/food.php');
 require __DIR__.('/food.php');
 require_once __DIR__.('/toys.php');
 require __DIR__.('/kennels.php');
+require __DIR__.('/card.php');
+
 
 
 ?>
@@ -18,7 +20,9 @@ require __DIR__.('/kennels.php');
 <body>
 
     <div>
-        <h2></h2>
+        <h2><?php echo $productOne->name ?></h2>
+        <h2><?php echo $productOne->composition ?></h2>
+
     </div>
     
 </body>
