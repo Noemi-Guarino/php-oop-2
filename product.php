@@ -22,7 +22,7 @@ class product {
         return $this->price;
     }
 
-    public function get_photo()
+    public function get_img()
     {
         return $this->img;
     }
