@@ -1,5 +1,5 @@
 <?php
-require __DIR__.('/product.php');
+require_once __DIR__.('/product.php');
 
 class toys extends product{
     public $toys;
@@ -9,14 +9,14 @@ class toys extends product{
     public function __construct(
         $name, 
         $price, 
-        $photo, 
+        $img, 
         $categories, 
         $toys,
         $material
         )
         
         {
-            parent::__construct($name, $price, $photo, $categories);
+            parent::__construct($name, $price, $img, $categories);
             $this->toys = $toys;
             $this->material = $material;
 
@@ -35,3 +35,4 @@ class toys extends product{
 
 }
 
+?> 
