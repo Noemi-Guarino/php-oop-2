@@ -6,3 +6,5 @@ require __DIR__.('card.php');
 require __DIR__.('toys.php');
 require __DIR__.('kennels.php');
 
+
+?>

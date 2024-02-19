@@ -9,15 +9,18 @@ class kennels extends product{
         $price, 
         $photo, 
         $categories, 
-        $type,
         $kennels
         )
         
         {
-            parent::__construct($name, $price, $photo, $categories, $type,$kennels);
+            parent::__construct($name, $price, $photo, $categories);
             $this->kennels = $kennels;
         }
 
     
+        public function get_kennels()
+        {
+            return $this->kennels;
+        }
 
 }

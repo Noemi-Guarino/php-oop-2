@@ -8,15 +8,17 @@ class food extends product{
         $price, 
         $photo, 
         $categories, 
-        $type,
         $food
         )
         
         {
-            parent::__construct($name, $price, $photo, $categories, $type,$food);
+            parent::__construct($name, $price, $photo, $categories);
             $this->food = $food;
         }
 
-    
+        public function get_food()
+        {
+            return $this->food;
+        }
 
 }

@@ -9,16 +9,19 @@ class toys extends product{
         $price, 
         $photo, 
         $categories, 
-        $type,
         $toys
         )
         
         {
-            parent::__construct($name, $price, $photo, $categories, $type,$toys);
+            parent::__construct($name, $price, $photo, $categories);
             $this->toys = $toys;
         }
 
-    
+        public function get_toys()
+        {
+            return $this->toys;
+        }
+
 
 }
 

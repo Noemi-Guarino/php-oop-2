@@ -9,15 +9,18 @@ class categories extends product{
         $price, 
         $photo, 
         $categories, 
-        $type,
         $categoriesname
         )
         
         {
-            parent::__construct($name, $price, $photo, $categories, $type,$categoriesname);
+            parent::__construct($name, $price, $photo, $categories);
             $this->categoriesname = $categoriesname;
         }
 
+        public function get_categoriesname()
+        {
+            return $this->categoriesname;
+        }
     
 
 }
