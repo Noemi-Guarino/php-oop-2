@@ -1,32 +1,35 @@
 <?php
 require_once __DIR__.('/product.php');
+require_once __DIR__.('/HasMaterial.php');
+
 
 class kennels extends product{
-    public $material_kennels;
+    // public $material_kennels;
     public $format_kennels;
 
+    use HasMaterial;
 
     public function __construct(
         $name, 
         $price, 
         $img, 
         $categories, 
-        $material_kennels,
-        $format_kennels
+        $material,
+        $format_kennels,
         )
         
         {
             parent::__construct($name, $price, $img, $categories);
-            $this->material_kennels = $material_kennels;
+            $this->material = $material;
             $this->format_kennels = $format_kennels;
 
         }
 
     
 
-        public function get_material_kennels()
+        public function get_material()
         {
-            return $this->material_kennels;
+            return $this->material;
         }
 
         public function get_format_kennels()

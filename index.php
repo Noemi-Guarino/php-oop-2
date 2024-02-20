@@ -4,6 +4,8 @@ require_once __DIR__.('/food.php');
 require_once __DIR__.('/toys.php');
 require_once __DIR__.('/kennels.php');
 require_once __DIR__.('/card.php');
+require_once __DIR__.('/HasMaterial.php');
+
 
 // $productOne = new Food( 'Croccantini', '19,99€', 'img', 'cane', 'Super crocchette', 'Proteine disidratate di salmone','gluten free');
 
@@ -31,7 +33,7 @@ require_once __DIR__.('/card.php');
                     <h3><?php echo $productThree->get_name() ?></h3>
                     <div class="card-text">
                         <h6><strong>Categoria:</strong> <?php echo $productThree->get_categories()?></h6>
-                        <p><strong>Materiale:</strong> <?php echo $productThree->get_material_kennels() ?></p>
+                        <p><strong>Materiale:</strong> <?php echo $productThree->get_material() ?></p>
                         <h5><strong>Misure:</strong> <?php echo $productThree->get_format_kennels() ?></h5>
                         <h5><?php echo $productThree->get_price() ?></h5>
                     </div>

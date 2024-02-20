@@ -1,8 +1,12 @@
 <?php
 require_once __DIR__.('/product.php');
+require_once __DIR__.('/HasMaterial.php');
+
 
 class toys extends product{
-    public $material;
+    // public $material;
+
+    use HasMaterial;
 
 
     public function __construct(
@@ -10,13 +14,12 @@ class toys extends product{
         $price, 
         $img, 
         $categories, 
-        $material
+        $material,
         )
         
         {
             parent::__construct($name, $price, $img, $categories);
             $this->material = $material;
-
         }
 
 
