@@ -1,10 +1,10 @@
 <?php
 require_once __DIR__.('/product.php');
-require_once __DIR__.('/food.php');
-require_once __DIR__.('/toys.php');
-require_once __DIR__.('/kennels.php');
+require_once __DIR__.('/classes/food.php');
+require_once __DIR__.('/classes/toys.php');
+require_once __DIR__.('/classes/kennels.php');
 require_once __DIR__.('/card.php');
-require_once __DIR__.('/HasMaterial.php');
+require_once __DIR__.('/traits/HasMaterial.php');
 
 
 // $productOne = new Food( 'Croccantini', '19,99€', 'img', 'cane', 'Super crocchette', 'Proteine disidratate di salmone','gluten free');
