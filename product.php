@@ -1,5 +1,5 @@
 <?php
-class product {
+class Product {
     public $name;
     public $price;
     public $img;
@@ -8,7 +8,14 @@ class product {
     public function __construct($name, $price, $img, $categories) {
         $this->name = $name;
         $this->price = $price;
-        $this->img = $img;
+        // $this->img = $img;
+        if (is_string($img)) {
+            $this->img = $img;
+        }
+        else {
+            // Dì al programmatore che sta sbagliando (e cosa)
+            throw new Exception('Img non è una stringa');
+        }
         $this->categories = $categories;
     }
 

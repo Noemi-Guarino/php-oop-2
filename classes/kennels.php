@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__.('/../product.php');
-require_once __DIR__.('/../traits/HasMaterial.php');
-require_once __DIR__.('/../traits/HasColor.php');
+require_once __DIR__.'/../Product.php';
+require_once __DIR__.'/../traits/HasMaterial.php';
+require_once __DIR__.'/../traits/HasColor.php';
 
 
 
-class kennels extends product{
+class Kennels extends Product{
     // public $material_kennels;
     public $format_kennels;
 
@@ -24,10 +24,12 @@ class kennels extends product{
         )
         
         {
+            
             parent::__construct($name, $price, $img, $categories);
             $this->material = $material;
             $this->format_kennels = $format_kennels;
             $this->color = $color;
+
 
 
         }

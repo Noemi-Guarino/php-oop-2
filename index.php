@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__.('/product.php');
-require_once __DIR__.('/classes/food.php');
-require_once __DIR__.('/classes/toys.php');
-require_once __DIR__.('/classes/kennels.php');
-require_once __DIR__.('/card.php');
-require_once __DIR__.('/traits/HasMaterial.php');
-require_once __DIR__.('/traits/HasColor.php');
+require_once __DIR__.'/product.php';
+require_once __DIR__.'/classes/food.php';
+require_once __DIR__.'/classes/toys.php';
+require_once __DIR__.'/classes/kennels.php';
+require_once __DIR__.'/card.php';
+require_once __DIR__.'/traits/HasMaterial.php';
+require_once __DIR__.'/traits/HasColor.php';
 
 
 
@@ -37,7 +37,7 @@ require_once __DIR__.('/traits/HasColor.php');
                         <h6><strong>Categoria:</strong> <?php echo $productThree->get_categories()?></h6>
                         <p><strong>Materiale:</strong> <?php echo $productThree->get_material() ?></p>
                         <h5><strong>Misure:</strong> <?php echo $productThree->get_format_kennels() ?></h5>
-                        <p><strong>Colore:</strong> <?php echo $productTwo->get_color() ?></p>
+                        <p><strong>Colore:</strong> <?php echo $productThree->get_color() ?></p>
                         <h5><?php echo $productThree->get_price() ?></h5>
                     </div>
                     <a href="#" class="btn btn-primary">Shop now</a>
@@ -60,7 +60,7 @@ require_once __DIR__.('/traits/HasColor.php');
                 </div>
             </div>
 
-
+            <?php if(isset($productOne)){ ?>
             <div class="card my_card p-4 mb-4 m-5" style="width: 18rem;">
                 <div class="p-2">
                     <img src="<?php echo $productOne->get_img() ?>" class="card-img-top" alt="...">
@@ -77,6 +77,9 @@ require_once __DIR__.('/traits/HasColor.php');
                     <a href="#" class="btn btn-primary">Shop now</a>
                 </div>
             </div>
+            <?php } else { ?>
+                <div><?php echo $errorMessage; ?></div>
+            <?php } ?>
             
         </div>
 
