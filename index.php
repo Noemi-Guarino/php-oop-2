@@ -5,6 +5,8 @@ require_once __DIR__.('/classes/toys.php');
 require_once __DIR__.('/classes/kennels.php');
 require_once __DIR__.('/card.php');
 require_once __DIR__.('/traits/HasMaterial.php');
+require_once __DIR__.('/traits/HasColor.php');
+
 
 
 // $productOne = new Food( 'Croccantini', '19,99€', 'img', 'cane', 'Super crocchette', 'Proteine disidratate di salmone','gluten free');
