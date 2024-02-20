@@ -35,6 +35,7 @@ require_once __DIR__.('/traits/HasMaterial.php');
                         <h6><strong>Categoria:</strong> <?php echo $productThree->get_categories()?></h6>
                         <p><strong>Materiale:</strong> <?php echo $productThree->get_material() ?></p>
                         <h5><strong>Misure:</strong> <?php echo $productThree->get_format_kennels() ?></h5>
+                        <p><strong>Colore:</strong> <?php echo $productTwo->get_color() ?></p>
                         <h5><?php echo $productThree->get_price() ?></h5>
                     </div>
                     <a href="#" class="btn btn-primary">Shop now</a>
@@ -50,6 +51,7 @@ require_once __DIR__.('/traits/HasMaterial.php');
                     <div class="card-text">
                         <h6><strong>Categoria:</strong> <?php echo $productTwo->get_categories()?></h6>
                         <p><strong>Materiale:</strong> <?php echo $productTwo->get_material() ?></p>
+                        <p><strong>Colore:</strong> <?php echo $productTwo->get_color() ?></p>
                         <h5><?php echo $productTwo->get_price() ?></h5>
                     </div>
                     <a href="#" class="btn btn-primary">Shop now</a>

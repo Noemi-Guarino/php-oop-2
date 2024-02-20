@@ -1,12 +1,16 @@
 <?php
 require_once __DIR__.('/../product.php');
 require_once __DIR__.('/../traits/HasMaterial.php');
+require_once __DIR__.('/../traits/HasColor.php');
+
 
 
 class toys extends product{
     // public $material;
 
     use HasMaterial;
+    use HasColor;
+
 
 
     public function __construct(
@@ -15,11 +19,14 @@ class toys extends product{
         $img, 
         $categories, 
         $material,
+        $color,
         )
         
         {
             parent::__construct($name, $price, $img, $categories);
             $this->material = $material;
+            $this->color = $color;
+
         }
 
 
@@ -27,7 +34,6 @@ class toys extends product{
         {
             return $this->material;
         }
-
 
 }
 
